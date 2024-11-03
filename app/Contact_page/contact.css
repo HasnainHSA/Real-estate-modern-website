@@ -1,0 +1,96 @@
+.contact {
+  padding: 1rem 8rem;
+  width: 100%;
+  height: auto;
+}
+
+.contact-inner {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact_text {
+  width: 40%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact_map {
+  width: 50%;
+  height: 55vh;
+}
+
+.c-map {
+  width: 100%;
+  height: inherit;
+}
+
+.c-h1 {
+  font-size: 5rem;
+  color: #bdbdbd;
+  font-weight: 300;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+.c-h2 {
+    margin-top: -1.5rem;
+    font-size: 4rem;
+    color: #333333;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.c-s-text{
+    margin-bottom: 2rem;
+}
+
+.c-s-text p{
+    color: #333333;
+}
+
+
+.c-text-1{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+
+.c-text-2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.c-text-3{
+    color: #333333;
+    margin-bottom: 1rem;
+}
+
+.c-btn{
+    padding: 1.5rem;
+    width: 40%;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: #333333;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+.c-btn:hover{
+    width: 100%;
+  cursor: pointer;
+  background-color: #555555;
+}

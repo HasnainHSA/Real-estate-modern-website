@@ -1,10 +1,4 @@
-// link tag
-import Link from "next/link";
 
-// Image tag
-import Image from "next/image";
-import logo from "./images/logo.png";
-import white_logo from "./images/logo-white.png";
 
 // css stylesheet
 import "./globals.css";
@@ -12,43 +6,15 @@ import "./globals.css";
 // icons
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { IoIosArrowRoundBack } from "react-icons/io";
-import { IoLocationOutline } from "react-icons/io5";
-import { LuPhoneCall } from "react-icons/lu";
-import { MdOutlineMail } from "react-icons/md";
-import { FaFacebookF } from "react-icons/fa6";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa6";
-import { FaPinterestP } from "react-icons/fa6";
-
-
-
+import Header from "./components/header";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
     <div>
       <div className="home-page">
-        <div className="header">
-          <div className="logo">
-            <Image src={logo} alt="logo_img" className="logo_img" />
-          </div>
-          <div className="navlinks">
-            <Link href={"./"} className="link">
-              Main
-            </Link>
-            <Link href={"./Gallery_page"} className="link">
-              Gallery
-            </Link>
-            <Link href={"./Project_page"} className="link">
-              Projects
-            </Link>
-            <Link href={"./Certification_page"} className="link">
-              Certification
-            </Link>
-            <Link href={"./Contact_page"} className="link">
-              Contacts
-            </Link>
-          </div>
-        </div>
+        
+        <Header/>
 
         <div className="hero-cont">
           <div className="hero-text">
@@ -58,7 +24,7 @@ export default function Home() {
             <div className="third-hero-cont">
               <div className="hero-text-btns">
                 <div className="h-arrow-left">
-                  <IoIosArrowRoundBack />
+                  <IoIosArrowRoundBack/>
                 </div>
                 <div className="h-arrow-right">
                   <IoIosArrowRoundForward />
@@ -179,56 +145,8 @@ export default function Home() {
         </div>
       </div>
 
-
-
-      <footer>
-        <div className="footer-inner">
-          <Image
-            src={white_logo}
-            alt="logo_white_img"
-            className="logo_white_img"
-          />
-
-          <div className="footerlink-1">
-            <h4>Information</h4>
-            <span>Main</span>
-            <span>Gallery</span>
-            <span>Projects</span>
-            <span>Certification</span>
-            <span>Contact</span>
-          </div>
-
-          <div className="footerlink-2">
-            <h4>Contact</h4>
-            <div className="f-con-icon">
-              <IoLocationOutline className="f-icon" />
-              1234 Sample Street <br /> Austin Texas 78704
-            </div>
-            <div className="f-con-icon">
-              <LuPhoneCall className="f-icon" />7 (701) 77 76 811
-            </div>
-            <div className="f-con-icon">
-              <MdOutlineMail className="f-icon" />
-              Galym.sultanov@mail.ru
-            </div>
-          </div>
-
-          <div className="footerlink-3">
-            <h4>Social Media</h4>
-            <div className="social-icons">
-            <FaTwitter />
-            <FaFacebookF />
-            <FaLinkedin />
-            <FaPinterestP />
-            </div>
-          </div>
-        </div>
-
-        <div className="f-line"></div>
-        <span className="rights-text">© 2021 All Rights Reserved</span>
-      </footer>
-
-      
+      <Footer/>
+     
     </div>
   );
 }
